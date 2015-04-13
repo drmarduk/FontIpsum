@@ -19,7 +19,7 @@ func fontHandler(w http.ResponseWriter, r *http.Request) {
 
 	font = getFontName(font)
 
-	tmpl, err := template.ParseFiles("html/index.tpl")
+	tmpl, err := template.ParseFiles("html/index.html")
 	if err != nil {
 		log.Println(err.Error())
 		return
